@@ -1,0 +1,108 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 212B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.3s
+
+#3 [1/7] FROM docker.io/library/python:3.11-slim@sha256:e41613d42d4891e4930f79523f93f81bbc7632584ec65e36ab055f41a800b41e
+#3 resolve docker.io/library/python:3.11-slim@sha256:e41613d42d4891e4930f79523f93f81bbc7632584ec65e36ab055f41a800b41e 0.0s done
+#3 sha256:0526d5e29bf341cb1941d46a6d4ab64fcde4fca3dc3adccfb4dbf5728b88b61e 249B / 249B 0.2s done
+#3 sha256:58abdd9670ca8c69d03432ce188995dee67f0979357caf83866fe1ef2ec37138 14.45MB / 14.45MB 1.3s done
+#3 sha256:41e7217c2e506d048f89ca0c5cfef848c05ef990900627c19f99938c4aae57f8 1.29MB / 1.29MB 1.3s done
+#3 sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 29.83MB / 29.83MB 1.3s done
+#3 extracting sha256:6b37362b3da78869050b894b799ad4df04f1f3b52774087db0d81151570244c8 0.8s done
+#3 extracting sha256:41e7217c2e506d048f89ca0c5cfef848c05ef990900627c19f99938c4aae57f8 0.1s done
+#3 extracting sha256:58abdd9670ca8c69d03432ce188995dee67f0979357caf83866fe1ef2ec37138 0.6s done
+#3 extracting sha256:0526d5e29bf341cb1941d46a6d4ab64fcde4fca3dc3adccfb4dbf5728b88b61e 0.0s done
+#3 DONE 3.0s
+
+#4 [2/7] WORKDIR /app
+#4 DONE 2.4s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 8.51kB done
+#6 DONE 0.0s
+
+#7 [3/6] COPY requirements.txt .
+#7 DONE 0.1s
+
+#8 [4/6] RUN pip install --no-cache-dir -r requirements.txt
+#8 1.737 Collecting flask (from -r requirements.txt (line 1))
+#8 1.787   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+#8 1.854 Collecting requests (from -r requirements.txt (line 2))
+#8 1.861   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#8 1.904 Collecting blinker>=1.9.0 (from flask->-r requirements.txt (line 1))
+#8 1.910   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#8 1.959 Collecting click>=8.1.3 (from flask->-r requirements.txt (line 1))
+#8 1.966   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#8 2.002 Collecting itsdangerous>=2.2.0 (from flask->-r requirements.txt (line 1))
+#8 2.009   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#8 2.052 Collecting jinja2>=3.1.2 (from flask->-r requirements.txt (line 1))
+#8 2.058   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#8 2.168 Collecting markupsafe>=2.1.1 (from flask->-r requirements.txt (line 1))
+#8 2.175   Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#8 2.238 Collecting werkzeug>=3.1.0 (from flask->-r requirements.txt (line 1))
+#8 2.245   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+#8 2.477 Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 2))
+#8 2.484   Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+#8 2.490      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.9/45.9 kB 16.3 MB/s eta 0:00:00
+#8 2.551 Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 2))
+#8 2.558   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#8 2.670 Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 2))
+#8 2.678   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#8 2.741 Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 2))
+#8 2.747   Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+#8 2.808 Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+#8 2.813    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.4/103.4 kB 77.5 MB/s eta 0:00:00
+#8 2.821 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#8 2.824    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 164.2 MB/s eta 0:00:00
+#8 2.831 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 2.838 Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+#8 2.842    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 kB 149.0 MB/s eta 0:00:00
+#8 2.851 Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (262 kB)
+#8 2.856    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 262.3/262.3 kB 158.0 MB/s eta 0:00:00
+#8 2.864 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#8 2.870    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 106.1 MB/s eta 0:00:00
+#8 2.877 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#8 2.881    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 105.6 MB/s eta 0:00:00
+#8 2.889 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 2.896 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 2.902    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 101.9 MB/s eta 0:00:00
+#8 2.909 Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#8 2.920 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#8 2.924    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 168.9 MB/s eta 0:00:00
+#8 2.931 Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+#8 2.935    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.5/226.5 kB 221.1 MB/s eta 0:00:00
+#8 3.105 Installing collected packages: urllib3, markupsafe, itsdangerous, idna, click, charset_normalizer, certifi, blinker, werkzeug, requests, jinja2, flask
+#8 3.792 Successfully installed blinker-1.9.0 certifi-2026.7.22 charset_normalizer-3.5.1 click-8.5.0 flask-3.1.3 idna-3.20 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 requests-2.34.2 urllib3-2.8.0 werkzeug-3.1.8
+#8 3.793 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 3.941 
+#8 3.941 [notice] A new release of pip is available: 24.0 -> 26.2.1
+#8 3.941 [notice] To update, run: pip install --upgrade pip
+#8 DONE 8.0s
+
+#9 [5/6] COPY app.py .
+#9 DONE 0.1s
+
+#10 [6/6] COPY static/ static/
+#10 DONE 0.2s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 1.0s done
+#11 exporting manifest sha256:dd0607f25100d5ddd1f3397bdc83d6bffd782e2164282ead4c6d2ec4ec3865d0
+#11 exporting manifest sha256:dd0607f25100d5ddd1f3397bdc83d6bffd782e2164282ead4c6d2ec4ec3865d0 0.0s done
+#11 exporting config sha256:e7734d8465a8adae2acdef80c77cda8a4789816130c1c2b5675526a4c3d9dae9 0.0s done
+#11 exporting attestation manifest sha256:531daaab83019becf2f33313de8b9d331d6e840f2d60ee09fe9e47a4f40dbebb 0.0s done
+#11 exporting manifest list sha256:41e4a1002fd629bc9733ea006d571225694beca7511fbbd56979556c281d4fad 0.0s done
+#11 naming to docker.io/library/chatbot-frontend:latest done
+#11 unpacking to docker.io/library/chatbot-frontend:latest
+#11 unpacking to docker.io/library/chatbot-frontend:latest 0.4s done
+#11 DONE 1.5s

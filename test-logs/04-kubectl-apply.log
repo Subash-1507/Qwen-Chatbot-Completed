@@ -1,0 +1,6 @@
+namespace/chatbot created
+deployment.apps/backend created
+deployment.apps/frontend created
+service/backend created
+service/frontend created
+horizontalpodautoscaler.autoscaling/backend-hpa created

@@ -1,4 +1,12 @@
-# Qwen Chatbot — Kubernetes Demo
+# Qwen Chatbot — Kubernetes Demo (Completed & Tested)
+
+> **Completed and successfully tested by subash (GitHub: [Subash-1507](https://github.com/Subash-1507)).**
+> This repository is a backup of a full, verified build-and-deploy run of the original
+> [Qwen-Chatbot](https://github.com/Subash-1507/Qwen-Chatbot) project, carried out end-to-end inside an
+> isolated GitHub Codespace: both Docker images were built, deployed to a local Kubernetes cluster
+> (minikube), and the chatbot's `/chat` endpoint was verified live with a real model response.
+> Full logs, the issue hit along the way, and the fix are documented in
+> [`test-logs/00-TESTING-SUMMARY.md`](test-logs/00-TESTING-SUMMARY.md).
 
 A local chatbot powered by **Qwen2.5-0.5B-Instruct**, running fully offline inside Kubernetes.  
 No Hugging Face token required — the model is baked into the Docker image at build time.
